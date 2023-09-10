@@ -1,0 +1,8 @@
+services:
+  pma:
+    image: phpmyadmin
+    ports:
+      - 8000:80
+    restart: always
+    environment:
+      - PMA_ARBITRARY=1
